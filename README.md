@@ -13,6 +13,7 @@ Expected Output: Pizza {size: "small", sauce: "red", toppings: ["pineapple", "mu
 Test: "It should calculate cost based on user input"
 Code:
 pizza = new Pizza("small", "red", "pineapple", "mushrooms", "olives");
+pizza.calculateCost();
 Expected Output: 18
 
 **Describe: Toppings()**
@@ -20,3 +21,4 @@ Expected Output: 18
 Test: "It should return an object with the values of toppings"
 Code:
 toppings = new Toppings("pineapple", "mushrooms", "olives")
+Expected Output: Toppings {toppings: "pineapple", "mushrooms", "olives"}
