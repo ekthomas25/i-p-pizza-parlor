@@ -36,7 +36,7 @@ Pizza.prototype.calculateCost = function() {
   if (this.topping2 !== "0") {
     this.price += 1;
   }
-  if (this.topping1 !== "0") {
+  if (this.topping3 !== "0") {
     this.price += 1;
   }
   return this.price;
