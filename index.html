@@ -11,14 +11,55 @@
   <h1>Pizza Parlor</h1>
   <div class="container">
     <form id="pizza-select">
-      
-      <select class="form-control" id="size">
-        <option value="1">Small: 12"</option>
-        <option value="2">Medium: 15"</option>
-        <option value="3">Large: 18"</option>
-        <option value="4">XL: 26"</option>
-      </select>
+      <div class="container">
+        <h2>Select Size:</h2>
+        <select class="form-control" id="size">
+          <option value="1">Small: 12"</option>
+          <option value="2">Medium: 15"</option>
+          <option value="3">Large: 18"</option>
+          <option value="4">XL: 26"</option>
+        </select>
+      </div>
 
+      <div class="container">
+        <h2>Select Sauce:</h2>
+        <select class="form-control" id="sauce">
+          <option value="Red">Red</option>
+          <option value="Pesto">Pesto</option>
+          <option value="White">White</option>
+        </select>
+      </div>
+
+      <div class="container">
+        <h2>Select Toppings:</h2>
+        <h3>Meat:</h3>
+        <select class="form-control" id="topping1">
+          <option value="0">None</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="sausage">Sausage</option>
+          <option value="vegpep">Veggie Pepperoni</option>
+          <option value="vegsaus">Veggie Sausage</option>
+        </select>
+        <h3>Veggies:</h3>
+        <select class="form-control" id="topping2">
+          <option value="0">None</option>
+          <option value="pineapple">Pineapple</option>
+          <option value="jalepeno">Jalepeno</option>
+          <option value="onion">Onion</option>
+          <option value="olive">Olives</option>
+          <option value="mushroom">Mushrooms</option>
+        </select>
+        <h3>Cheese:</h3>
+        <select class="form-control" id="topping3">
+          <option value="0">None</option>
+          <option value="feta">Feta</option>
+          <option value="gorg">Gorgonzola</option>
+          <option value="extra">Extra Mozzerella</option>
+          <option value="pineapple">Smoked Gouda</option>
+        </select>
+
+      </div>
+      <button type="submit" class="btn">Order!</button>
     </form>
   </div>
 </body>
