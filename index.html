@@ -8,30 +8,35 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
-  <h1>Pizza Parlor</h1>
+  <div class="jumbotron">
+    <h1>Gimme Pizza!</h1>
+    <h4>A  P-I-Z-Z-A  Parlor</h4>
+  </div>
   <div class="container">
     <form id="pizza-select">
-      <div class="container">
-        <h2>Select Size:</h2>
-        <select class="form-control" id="size">
-          <option value="Small">Small: 12"</option>
-          <option value="Medium">Medium: 15"</option>
-          <option value="Large">Large: 18"</option>
-          <option value="XL">XL: 26"</option>
-        </select>
+      <div class="top">
+        <div class="size-select">
+          <h2>Select Size:</h2>
+          <select class="form-control" id="size">
+            <option value="Small">Small: 12"</option>
+            <option value="Medium">Medium: 15"</option>
+            <option value="Large">Large: 18"</option>
+            <option value="XL">XL: 26"</option>
+          </select>
+        </div>
+
+        <div class="sauce-select">
+          <h2>Select Sauce:</h2>
+          <select class="form-control" id="sauce">
+            <option value="Red">Red</option>
+            <option value="Pesto">Pesto</option>
+            <option value="White">White</option>
+          </select>
+        </div>
       </div>
 
       <div class="container">
-        <h2>Select Sauce:</h2>
-        <select class="form-control" id="sauce">
-          <option value="Red">Red</option>
-          <option value="Pesto">Pesto</option>
-          <option value="White">White</option>
-        </select>
-      </div>
-
-      <div class="container">
-        <h2>Select Toppings:</h2>
+        <h2>Put it in the Pizza:</h2>
         <h3>Meat:</h3>
         <select class="form-control" id="topping1">
           <option value="0">None</option>
