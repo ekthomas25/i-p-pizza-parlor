@@ -8,6 +8,7 @@ h1  {
 }
 
 h2  {
+  margin-top: 30px;
   font-family: sans-serif;
   font-weight: 100;
   color: white;
@@ -35,6 +36,15 @@ body  {
   min-height: 300px;
   opacity: 70%;
   background-color: lightpink;
+}
+
+.container  {
+  margin-bottom: 50px;
+}
+
+.top  {
+  background-color: tomato;
+  width: 80%;
 }
 
 .size-select {
@@ -93,6 +103,11 @@ body  {
 }
 
 .cost  {
+  display: none;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 18pt;
+  color: white;
   padding: 5%;
   margin-top: 80px;
   margin-left: 15%;
