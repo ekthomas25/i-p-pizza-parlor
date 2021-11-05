@@ -1,4 +1,6 @@
 # Pizza Parlor
+### By Liz Thomas
+
 
 **Describe: Pizza()**
 
