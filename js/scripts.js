@@ -22,7 +22,7 @@ Pizza.prototype.sizeCost = function() {
     this.price += 22;
   } else if (this.size === "XL") {
     this.price += 26;
-  }
+  } 
   return this.price;
 };
 
@@ -49,6 +49,11 @@ Pizza.prototype.toppingCost = function() {
   
 };
 
+function showCost(pizza) {
+$(".cost").show();
+$("#pizza1-total").html(pizza.price);
+}
+
 $(document).ready(function() {
   $("form#pizza-select").submit(function(event){
     event.preventDefault();
@@ -57,11 +62,15 @@ $(document).ready(function() {
     let topping1 = $("#topping1").val();
     let topping2 = $("#topping2").val();
     let topping3 = $("#topping3").val();
-    $("#size").val("");
-    $("#sauce").val("");
+    $("#size").val();
+    $("#sauce").val();
     $("#topping1").val();
-    $("#topping2").val("");
-    $("#topping3").val("");
+    $("#topping2").val();
+    $("#topping3").val();
     let pizza = new Pizza(pizzaSize, pizzaSauce, topping1, topping2, topping3);
+    pizza.sizeCost();
+    pizza.sauceCost();
+    pizza.toppingCost();
+    showCost(pizza);
   })
 })
