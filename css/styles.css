@@ -1,18 +1,42 @@
 h1  {
-
+  text-align: center;
+  font-family: monospace;
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 5em;
+  color: white;
 }
 
 h2  {
-
+  font-family: sans-serif;
+  font-weight: 100;
+  color: white;
 }
 
 h3  {
+  font-family: 'Courier New', Courier, monospace;
+}
 
+h4  {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 200;
+  color: white;
 }
 
 body  {
   background-color: lightpink;
 }
+
+.jumbotron  {
+  background-image: url(/img/gimme-pizza.png);
+  background-size: cover;
+  height: 100%;
+  min-height: 300px;
+  opacity: 70%;
+  background-color: lightpink;
+}
+
 .size-select {
   float: left;
   width: 45%;
