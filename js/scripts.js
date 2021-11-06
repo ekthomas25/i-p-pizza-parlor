@@ -50,7 +50,7 @@ Pizza.prototype.toppingCost = function() {
 };
 
 function showCost(pizza) {
-  $(".cost").slideDown("slow");
+  $(".cost").show();
   $("#pizza1-total").html(pizza.price);
 }
 
@@ -72,5 +72,5 @@ $(document).ready(function() {
     pizza.sauceCost();
     pizza.toppingCost();
     showCost(pizza);
-  })
-})
+  });
+});
