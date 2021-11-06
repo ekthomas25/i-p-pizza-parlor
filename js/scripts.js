@@ -50,8 +50,8 @@ Pizza.prototype.toppingCost = function() {
 };
 
 function showCost(pizza) {
-$(".cost").show();
-$("#pizza1-total").html(pizza.price);
+  $(".cost").slideDown("slow");
+  $("#pizza1-total").html(pizza.price);
 }
 
 $(document).ready(function() {
